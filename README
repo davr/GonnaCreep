@@ -1,0 +1,16 @@
+GonnaCreep is a Bukkit Plugin for Minecraft that randomly spawns creepers near players as they are walking around. Basically just to make the game harder.
+
+CONFIG FILE:
+The config file is located in <plugin_location>/GonnaCreep/config.yml . If it doesn't exist, a default one will be generated on startup.
+mob-chance: Chance that a creeper will be spawned on every player movement. Higher = less chance. Eg 10000 is the number I use, it means every time a player moves, there's a 1 in 10000 chance of spawning a creeper. Works out to one every fifteen or twenty minutes in my experience, which I feel is a good number
+mob-dist: How far away the creeper can be spawned. Default is 10 blocks, meaning the creeper will randomly be spawned within 0 to 10 blocks from your current location. 
+
+NOTE:
+No checking is done, so if you're underground, and the mob-dist setting is too high, there's a good chance the creeper will spawn inside a wall, harmless to you.
+
+COMMANDS:
+/gonnacreep setchance <amount>		: adjust the creeper chance
+/gonnacreep chance					: show current chance setting
+
+URLs:
+https://github.com/davr/GonnaCreep
