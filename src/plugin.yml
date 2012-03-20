@@ -1,0 +1,21 @@
+name: GonnaCreep
+main: org.davr.GonnaCreep
+version: 1.0
+author: davr
+website: http://blog.davr.org/
+description: |
+  Creepers Gonna Creep
+database: false
+commands:
+  gcreep:
+    description: Configure GonnaCreep settings
+    usage: /gcreep help
+    permission: gcreep.admin
+permissions:
+  gcreep.*:
+    description: Gives access to all GonnaCreep commands
+    children:
+      gcreep.admin
+  gcreep.admin:
+    description: Lets you change GonnaCreep settings
+    default: op
